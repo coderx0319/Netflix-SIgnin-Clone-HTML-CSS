@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style is used to design the elements in your project CSS //-->
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 100vh;
+            background: #000;
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        h1,h2,h3,h4,h5,h6,p{
+            padding: 0;
+            margin: 0;   
+        }
+        .main{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            opacity: 0.6;
+        }
+        .container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+        .navbar{
+            padding: 30px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            width: 200px;
+        }
+        .logo>img{
+            max-width: 100%;
+        }
+        .signin{
+            color: #fff;
+            cursor: pointer;
+            background: red;
+            max-height: max-content;
+            max-width: max-content;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .subcontainer{
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            color: #fff;
+        }
+        h1{
+            font-size: 40px;
+        }
+        input{
+            background: #00000084;
+            border: solid gray;
+            color: #fff;
+            padding: 10px;
+            width: 400px;
+            font-size: 20px;
+            outline: none;
+        }
+        button{
+            background: red;
+            border: solid red;
+            color: #fff;
+            font-weight: 600;
+            padding: 10px;
+            font-size: 20px;
+            cursor:pointer
+        }
+    </style>
+</head>
+<body>
+    <!-- this is the main backgorund image of project//-->
+    <div class="main">
+        <img class="bgimage" src="bg.jpg" alt="bgimage">
+    </div>
+    <!--this is the netflix logo used on website//-->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logonetflix.png" alt="logo">
+            </div>
+            <div class="signin">Sign In</div>
+        </div>
+        <!--this contains all the text and contents of webpage//-->
+        <div class="subcontainer">
+            <h1>Unlimited Movies , TV shows and more</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <h6>good job shantanu :) </h6>
+            <form>
+                <input type="text" value="Email address">
+                <button>Get Started</button>
+            </form>
+        </div>
+    </div>
+</body> 
+</html>
